@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>ADMIN CORE VIDEO</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body style="
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADMIN CORE VIDEO</title>
+<style>
+html,body{
   margin:0;
+  width:100%;
+  height:100%;
   background:black;
+}
+video{
   width:100vw;
   height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-">
+  object-fit:contain;
+  background:black;
+}
+</style>
+</head>
+<body>
 
 <video
   src="admin_final.mp4"
   controls
-  preload="metadata"
-  poster="poster.jpg"
-  style="width:100vw;height:100vh;object-fit:contain;background:black;"
+  preload="auto"
 ></video>
-
 
 </body>
 </html>
