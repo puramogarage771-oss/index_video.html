@@ -1,14 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ADMIN CORE VIDEO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <img id="bg" src="admin_bg_depth.png">
 
+  <!-- 背景 -->
+  <img id="bg" src="admin_bg_depth.png" alt="background">
+
+  <!-- 動画 -->
   <video id="mv" controls>
     <source src="admin_final.mp4" type="video/mp4">
   </video>
 
-  <script>
-    const v = document.getElementById('mv');
-    v.addEventListener('loadeddata', () => {
-      v.style.opacity = 1;
-    });
-  </script>
 </body>
+</html>
