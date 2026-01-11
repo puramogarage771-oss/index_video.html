@@ -2,29 +2,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ADMIN CORE VIDEO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>ADMIN CORE VIDEO</title>
   <style>
     html, body {
       margin: 0;
+      padding: 0;
       width: 100%;
       height: 100%;
       background: black;
-      overflow: hidden;
     }
-
-    .screen {
+    video {
       width: 100vw;
       height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    video {
-      width: 100%;
-      height: 100%;
       object-fit: cover;
       background: black;
     }
@@ -32,12 +22,14 @@
 </head>
 <body>
 
-  <div class="screen">
-    <video id="adminVideo" autoplay muted playsinline controls>
-      <source src="./admin_final.mp4" type="video/mp4">
-      動画を再生できません
-    </video>
-  </div>
+<video
+  src="admin_final.mp4"
+  autoplay
+  muted
+  loop
+  playsinline
+  controls>
+</video>
 
 </body>
 </html>
